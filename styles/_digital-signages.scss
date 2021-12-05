@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background-color: $black;
+    background-color: $primary;
 
     .logo {
       height: 150px;
@@ -38,7 +38,7 @@
   }
 
   &-content {
-    background-color: #1d1d1f;
+    background-color: $secondary;
   }
 
   .signage-vertical-heading {
@@ -133,6 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $primary;
 
     a {
       margin-top: 70px;
@@ -189,6 +190,7 @@
 
     &-content-container {
       width: 50%;
+      background-color: $primary;
     }
   }
 }
