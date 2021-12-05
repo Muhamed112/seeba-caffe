@@ -1,15 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import DigitalSignages from "../components/DigitalSignages";
+import Menu from "../components/Menu";
+
 import { getMenuData_One, getMenuData_Two, getEvents_One, getEvents_Two } from "../utils/services";
 
-export default function Home(menus, events) {
-  console.log(menus);
-  console.log(events)
+export default function Home({menus, events}) {
 
   return (
-    <div className={styles.container}>
-      
+    <div>
+      <DigitalSignages events={events} />
+      {/* <Menu menus={menus} /> */}
     </div>
   )
 }
