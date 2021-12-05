@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import SignageFooter from "./signageFooter";
 import SignageHeading from "./signageHeading";
-import image from "next/image";
+
 
 const SignageProduct = ({ event }) => {
   const { name, image: images, params, description } = event;
