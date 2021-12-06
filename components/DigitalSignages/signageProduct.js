@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import SignageFooter from "./signageFooter";
 import SignageHeading from "./signageHeading";
 
@@ -72,11 +71,6 @@ const SignageProduct = ({ event }) => {
             neque. Tempor eu purus molestie sed. A nullam amet quis dapibus
             ultricies.
           </p> */}
-          <img
-            className="signage-product-content-decor"
-            src="/images/hero-upper-decor-rotated.png"
-            alt="Decoration"
-          />
         </div>
         <SignageFooter />
       </div>

@@ -3,7 +3,7 @@
 .signage {
   height: 3840px;
   width: 2160px;
-  background-color: $black;
+  background-color: $primary;
   overflow: hidden;
 
   @media only screen and (min-width: $horizontal-breakpoint) {
