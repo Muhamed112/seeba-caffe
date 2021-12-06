@@ -5,11 +5,23 @@
   height: 2160px;
   width: 3840px;
   overflow: hidden;
-  background-color: $black;
+  background-color: $secondary;
+
+  &-header {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+    height: 254px;
+
+    img {
+      height: 160px;
+    }
+  }
 
   &-content {
-    height: 92%;
-    padding: 80px 60px 60px;
+    height: 85%;
+    padding: 80px 100px 60px;
 
     .category-title {
       font-size: $size-2;
@@ -59,8 +71,8 @@
     }
 
     img {
-      min-width: 500px;
-      max-height: 330px;
+      min-width: 485.02px;
+      max-height: 320.11px;
       margin-right: 48px;
     }
 
@@ -82,11 +94,12 @@
   }
 
   &-items {
+    height: 1425.96px;
     &.big-image {
       .menu-card img {
-        min-width: 750px;
-        width: 750px;
-        max-height: 520px;
+        min-width: 712.8px;
+        width: 712.8px;
+        max-height: 429.66px;
 
         &:not(:last-child) {
           margin-bottom: 50px;
@@ -96,9 +109,13 @@
   }
 
   &-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 60px 10px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 77px;
+    background-color: $secondary;
 
     img {
       height: 100px;
@@ -125,4 +142,17 @@
       }
     }
   }
+}
+
+.button.guestie-menu {
+  padding: 40px 50px;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: $black;
+  border: 2.5px solid $primary;
+  font-size: 48px;
+  font-family: $family-secondary;
+  font-weight: 700;
+  height: 110px;
+  margin: 0 auto;
 }

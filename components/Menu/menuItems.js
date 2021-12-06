@@ -19,7 +19,7 @@ const MenuItems = ({ menu, noImages = false }) => {
               <div
                 className={`menu-items ${columnWidth === 4 ? "big-image" : ""}`}
               >
-                {category.items.map((item, key) => (
+                {category.items.slice(0,4).map((item, key) => (
                   <MenuCard key={key} item={item} />
                 ))}
               </div>

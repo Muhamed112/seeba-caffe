@@ -7,8 +7,8 @@ export default function Home({menus, events}) {
 
   return (
     <div>
-      <DigitalSignages events={events} />
-      {/* <Menu menus={menus} /> */}
+      {/*<DigitalSignages events={events} /> */}
+      <Menu menus={menus} />
     </div>
   )
 }
