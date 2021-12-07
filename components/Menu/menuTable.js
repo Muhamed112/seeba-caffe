@@ -6,7 +6,7 @@ const MenuTable = ({ menu, noImages = false }) => {
   return (
     <div className="menu">
       <div className="menu-header">
-        <div class="menu-header-logo">
+        <div className="menu-header-logo">
           <img src="/images/logo.svg" alt="Logo" />
         </div>
       </div>
