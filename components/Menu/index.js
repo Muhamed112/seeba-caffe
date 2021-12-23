@@ -18,10 +18,10 @@ const Menu = ({ menus }) => {
       newArray.push(menu);
     });
 
-    menus.menuTwo.forEach((menu) => {
+    {/*menus.menuTwo.forEach((menu) => {
       newArray.push(menu);
       newArray.push(menu);
-    });
+    }); */}
 
     return newArray;
   };

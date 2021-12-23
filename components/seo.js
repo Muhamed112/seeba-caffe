@@ -8,32 +8,32 @@ export default function SEO() {
 
   React.useEffect(() => {
     (async function () {
-      axios.get("https://login.findie.se/api/profiles/251/").then((res) => {
+      axios.get("https://login.guestie.se/api/profiles/330/").then((res) => {
         const seoDescription = res.data.data.description;
         setSeoDescription(seoDescription);
       });
     })();
   }, []);
-
+  console.log(seoDescription);
   return (
     <Head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mr.Mango | it takes two to mango</title>
-      <meta name="title" content="Mr.Mango | it takes two to mango" />
+      <title>Caffe Schweizer</title>
+      <meta name="title" content="Caffe Schweizer" />
       <meta name="description" content={seoDescription || ""} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://mrmangostreetfood.com/" />
-      <meta property="og:title" content="Mr.Mango | it takes two to mango" />
+      <meta property="og:url" content="https://schweizer.se" />
+      <meta property="og:title" content="Caffe Schweizer" />
       <meta property="og:description" content={seoDescription} />
       <meta property="og:image" content={seoImage} />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://mrmangostreetfood.com/" />
+      <meta property="twitter:url" content="https://schweizer.se" />
       <meta
         property="twitter:title"
-        content="Mr.Mango | it takes two to mango"
+        content="Caffe Schweizer"
       />
       <meta property="twitter:description" content={seoDescription} />
       <meta property="twitter:image" content={seoImage}></meta>
