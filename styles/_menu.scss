@@ -154,5 +154,8 @@
   font-family: $family-secondary;
   font-weight: 700;
   height: 110px;
-  margin: 0 auto;
+  margin-bottom: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
 }
