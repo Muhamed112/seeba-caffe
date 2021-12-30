@@ -12,10 +12,11 @@ const MenuTable = ({ menu, noImages = false }) => {
       </div>
       <div className="menu-content">
         <MenuItems menu={menu} noImages={noImages} />
+        <div className="menu-footer">
+        <button className="button guestie-menu">G</button>
       </div>
-      <div className="menu-footer">
-        <button className="button guestie-menu">Guestie</button>
       </div>
+      
     </div>
   );
 };

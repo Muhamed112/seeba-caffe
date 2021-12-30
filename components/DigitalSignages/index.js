@@ -13,7 +13,7 @@ const DigitalSignages = ({ events }) => {
     <AutoplaySlider
       play={true}
       cancelOnInteraction={false}
-      interval={2000}
+      interval={20000}
       fillParent
       bullets={false}
       organicArrows={false}
