@@ -6,6 +6,7 @@
   width: 3840px;
   overflow: hidden;
   background-color: $secondary;
+  font-family: $family-primary;
 
   &-header {
     background-color: $primary;
@@ -24,14 +25,24 @@
     padding: 80px 100px 60px;
 
     .category-title {
-      font-size: 65.963px;;
+      font-size: 65.963px;
       color: $primary;
-      font-weight: bold;
+      font-weight: normal;
       margin-bottom: 50px;
+      font-family: $family-primary;
     }
 
     .column.is-4 .category-title {
       font-size: 69.96px;
+      line-height: 110%;
+    }
+
+    .column.is-4 .menu-card-info .item-title {
+      font-size: 62.4965px;
+      line-height: 76px;
+    }
+    .column.is-4 .menu-card-info .item-price {
+      font-size: 62.4965px;
       line-height: 110%;
     }
 
@@ -43,18 +54,19 @@
       .menu-category {
         width: 20%;
         height: 50%;
+        padding-right: 15px;
         margin-bottom: 100px;
 
         .category-title {
           white-space: nowrap;
           font-size: 65.963px;
-          margin-bottom: 64px;
+          margin-bottom: 60px;
         }
 
         &-items {
           .menu-card-info {
             &:not(:last-child) {
-              margin-bottom: 56px;
+              margin-bottom: 33px;
             }
           }
         }
@@ -66,27 +78,28 @@
     width: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &:not(:last-child) {
       margin-bottom: 20px;
     }
 
     img {
-      min-width: 485.02px;
+      min-width: 480.02px;
       max-height: 320.11px;
-      margin-right: 48px;
+      margin-right: 40px;
     }
 
     &-info {
       .item-title {
         color: #fff;
         font-size: 46.5621px;
-        margin-bottom: 24px;
-        font-weight: bold;
+        margin-bottom: 14px;
+        font-weight: normal;
       }
 
       .item-price {
-        font-size: 48px;
+        font-size: 46.5621px;
         color: $primary;
         font-weight: bold;
       }
@@ -137,7 +150,7 @@
 
       p {
         font-size: 34px;
-        font-family: $family-secondary;
+        font-family: $family-primary;
         margin-right: 30px;
       }
     }
@@ -151,7 +164,7 @@
   color: $black;
   border: 2.5px solid $primary;
   font-size: 48px;
-  font-family: $family-secondary;
+  font-family: $family-primary;
   font-weight: 700;
   height: 110px;
   margin-bottom: 50px;

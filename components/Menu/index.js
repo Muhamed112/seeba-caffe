@@ -34,7 +34,7 @@ const Menu = ({ menus }) => {
     <AutoplaySlider
       play={true}
       cancelOnInteraction={false}
-      interval={20000}
+      interval={false}
       fillParent
       bullets={false}
       organicArrows={false}
