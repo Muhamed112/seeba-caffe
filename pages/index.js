@@ -9,7 +9,7 @@ export default function Home({menus, events}) {
   return (
     <div>
       <SEO />
-      {/*<DigitalSignages events={events} /> {*/}
+      {/* <DigitalSignages events={events} />  */}
       <Menu menus={menus} />
     </div>
   )
