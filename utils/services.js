@@ -7,6 +7,7 @@ export function getMenuData_One(ctx = null) {
     .catch((err) => console.error(err));
 }
 
+//These are test events from mughalempire api, just to test behaviour with different fonts and stylings
 export function getEvents_One(ctx = null) {
   return axios
     .get(`https://login.findie.se/api/profiles/251/events`, ctx)

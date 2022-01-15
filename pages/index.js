@@ -4,8 +4,9 @@ import SEO from "../components/seo";
 
 import { getMenuData_One, getEvents_One, getEvents_Two } from "../utils/services";
 
-export default function Home({menus, events}) {
 
+export default function Home({menus, events}) {
+  console.log(menus.menuOne[0]);
   return (
     <div>
       <SEO />
