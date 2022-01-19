@@ -1,12 +1,10 @@
 import DigitalSignages from "../components/DigitalSignages";
 import Menu from "../components/Menu";
 import SEO from "../components/seo";
+import { getMenuData_One, getEvents_One, getEvents_Two,getImages } from "../utils/services";
 
-import { getMenuData_One, getEvents_One, getEvents_Two } from "../utils/services";
 
-
-export default function Home({menus, events}) {
-  console.log(menus.menuOne[0]);
+export default function Home({menus, events, images}) {
   return (
     <div>
       <SEO />
@@ -18,12 +16,16 @@ export default function Home({menus, events}) {
 
 export async function getStaticProps(ctx) {
   const menuOne = await getMenuData_One(ctx);
-  //const menuTwo = await getMenuData_Two(ctx);
   const eventsOne = await getEvents_One(ctx);
   const eventsTwo = await getEvents_Two(ctx);
+  const imagesArray = await getImages(ctx);
 
   const menus = {
     menuOne: [...menuOne],
+  }
+
+  const images = {
+    imagesOne: [...imagesArray],
   }
 
   const events = {
@@ -34,7 +36,8 @@ export async function getStaticProps(ctx) {
   return {
     props: {
       menus,
-      events
+      events,
+      images
     }
   }
 };

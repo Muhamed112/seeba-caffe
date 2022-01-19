@@ -59,7 +59,11 @@
 
         .category-title {
           white-space: nowrap;
-          font-size: 65.963px;
+          font-family: $family-primary;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 69.96px;
+          line-height: 110%;
           margin-bottom: 60px;
         }
 
@@ -93,15 +97,21 @@
     &-info {
       .item-title {
         color: #fff;
-        font-size: 46.5621px;
-        margin-bottom: 14px;
+        font-family: $family-primary;
+        font-style: normal;
         font-weight: normal;
+        font-size: 48px;
+        line-height: 64px;
+        margin-bottom: 30px;
       }
 
       .item-price {
-        font-size: 46.5621px;
-        color: $primary;
+        font-family: $family-secondary;
+        font-style: normal;
         font-weight: bold;
+        font-size: 44px;
+        line-height: 64px;
+        color: $primary;
       }
     }
   }

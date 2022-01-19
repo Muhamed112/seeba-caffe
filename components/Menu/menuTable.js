@@ -2,7 +2,7 @@ import React from "react";
 import MenuCard from "./menuCard";
 import MenuItems from "./menuItems";
 
-const MenuTable = ({ menu, noImages = false }) => {
+const MenuTable = ({ menu }) => {
   return (
     <div className="menu">
       <div className="menu-header">
@@ -11,7 +11,7 @@ const MenuTable = ({ menu, noImages = false }) => {
         </div>
       </div>
       <div className="menu-content">
-        <MenuItems menu={menu} noImages={noImages} />
+        <MenuItems menu={menu} />
         <button className="button guestie-menu">G</button>
       </div>
       

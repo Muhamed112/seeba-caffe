@@ -1,49 +1,49 @@
 import React from "react";
 import MenuCard from "./menuCard";
 
-const MenuItems = ({ menu, noImages = false }) => {
-  const maxItemsPerCategory = noImages ? 4 : 5;
-  const numberOfCategories = noImages ? 10 : 4;
+const MenuItems = ({ menu }) => {
+  // const maxItemsPerCategory = noImages ? 4 : 5;
+  // const numberOfCategories = noImages ? 10 : 4;
 
-  const categoiresToDisplay = menu.categories.slice(0, numberOfCategories);
+  const categoiresToDisplay = menu.categories.slice(0, 4);
+  const categoriesToDisplaySecondRow = menu.categories.slice(5, 7);
 
-  const columnWidth = categoiresToDisplay.length > 3 ? 3 : 4;
+  // const columnWidth = categoiresToDisplay.length > 3 ? 3 : 4;
 
   return (
-    <div className={`${noImages ? "menu-no-images" : "columns"}`}>
-      {!noImages ? (
-        <>
-          {categoiresToDisplay.map((category, k) => (
-            <div key={k} className={`column ${"is-" + columnWidth}`}>
-              <p className="category-title is-2">{category.name}</p>
-              <div
-                className={`menu-items ${columnWidth === 4 ? "big-image" : ""}`}
-              >
-                {category.items.slice(0,4).map((item, key) => (
-                  <MenuCard key={key} item={item} />
-                ))}
-              </div>
+    <>
+      <div className="menu-no-images">
+        {categoiresToDisplay.map((category, k) => (
+          <div key={k} className="menu-category">
+            <p className="category-title is-2">{category.name}</p>
+            <div className="menu-category-items">
+              {category.items.slice(0, 4).map((item, key) => (
+                <div key={key} className="menu-card-info">
+                  <p className="item-title">{item?.name || "/"}</p>
+                  <p className="item-price">{item?.price || "/"}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </>
-      ) : (
-        <>
-          {categoiresToDisplay.map((category, k) => (
-            <div key={k} className="menu-category">
-              <p className="category-title is-2">{category.name}</p>
-              <div className="menu-category-items">
-                {category.items.slice(0, 3).map((item, key) => (
-                  <div key={key} className="menu-card-info">
-                    <p className="item-title">{item?.name || "/"}</p>
-                    <p className="item-price">{item?.price || "/"}</p>
-                  </div>
-                ))}
-              </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="menu-no-images">
+        {categoriesToDisplaySecondRow.map((category, k) => (
+          <div key={k} className="menu-category">
+            <p className="category-title is-2">{category.name}</p>
+            <div className="menu-category-items">
+              {category.items.slice(0, 2).map((item, key) => (
+                <div key={key} className="menu-card-info">
+                  <p className="item-title">{item?.name || "/"}</p>
+                  <p className="item-price">{item?.price || "/"}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </>
-      )}
-    </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
