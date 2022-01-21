@@ -20,58 +20,54 @@
     }
   }
 
-  &-content {
-    height: 85%;
-    padding: 80px 100px 60px;
+  .category-title {
+    font-size: 90.6134px;
+    line-height: 110px;
+    color: $primary;
+    font-weight: normal;
+    margin-bottom: 60px;
+    font-family: $family-primary;
+  }
 
-    .category-title {
-      font-size: 65.963px;
-      color: $primary;
-      font-weight: normal;
-      margin-bottom: 50px;
-      font-family: $family-primary;
-    }
+  .column.is-4 .category-title {
+    font-size: 69.96px;
+    line-height: 110%;
+  }
 
-    .column.is-4 .category-title {
-      font-size: 69.96px;
-      line-height: 110%;
-    }
+  .column.is-4 .menu-card-info .item-title {
+    font-size: 62.4965px;
+    line-height: 76px;
+  }
+  .column.is-4 .menu-card-info .item-price {
+    font-size: 62.4965px;
+    line-height: 110%;
+  }
 
-    .column.is-4 .menu-card-info .item-title {
-      font-size: 62.4965px;
-      line-height: 76px;
-    }
-    .column.is-4 .menu-card-info .item-price {
-      font-size: 62.4965px;
-      line-height: 110%;
-    }
+  .menu-no-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    .menu-no-images {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    .menu-category {
+      width: 20%;
+      height: 50%;
+      padding-right: 15px;
+      margin-bottom: 100px;
 
-      .menu-category {
-        width: 20%;
-        height: 50%;
-        padding-right: 15px;
-        margin-bottom: 100px;
+      .category-title {
+        white-space: nowrap;
+        font-family: $family-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 90.6134px;
+        line-height: 110px;
+        margin-bottom: 60px;
+      }
 
-        .category-title {
-          white-space: nowrap;
-          font-family: $family-primary;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 69.96px;
-          line-height: 110%;
-          margin-bottom: 60px;
-        }
-
-        &-items {
-          .menu-card-info {
-            &:not(:last-child) {
-              margin-bottom: 33px;
-            }
+      &-items {
+        .menu-card-info {
+          &:not(:last-child) {
+            margin-bottom: 33px;
           }
         }
       }
@@ -100,18 +96,19 @@
         font-family: $family-primary;
         font-style: normal;
         font-weight: normal;
-        font-size: 48px;
-        line-height: 64px;
-        margin-bottom: 30px;
+        font-size: 61.2219px;
+        line-height: 74px;
+        margin-bottom: 25px;
       }
 
       .item-price {
         font-family: $family-secondary;
         font-style: normal;
         font-weight: bold;
-        font-size: 44px;
-        line-height: 64px;
+        font-size: 61.2219px;
+        line-height: 110%;
         color: $primary;
+        margin-bottom: 80px;
       }
     }
   }
@@ -165,20 +162,4 @@
       }
     }
   }
-}
-
-.button.guestie-menu {
-  padding: 40px 50px;
-  border-radius: 9999px;
-  background-color: #fff;
-  color: $black;
-  border: 2.5px solid $primary;
-  font-size: 48px;
-  font-family: $family-primary;
-  font-weight: 700;
-  height: 110px;
-  margin-bottom: 50px;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
 }

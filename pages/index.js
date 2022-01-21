@@ -9,7 +9,7 @@ export default function Home({menus, events, images}) {
     <div>
       <SEO />
       {/* <DigitalSignages events={events} />  */}
-      <Menu menus={menus} />
+      <Menu menus={menus} image={images} />
     </div>
   )
 } 
