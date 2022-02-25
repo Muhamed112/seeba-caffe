@@ -54,7 +54,12 @@ const MenuItems = ({ menu, image }) => {
             ))}
 
             <button className="button guestie-menu">
-              <img src="/images/guestro-symbol.png" alt="guestro-logo" width={80} height={80} />
+              <img
+                src="/images/guestro-logo.svg"
+                alt="guestro-logo"
+                width={400}
+                height={400}
+              />
             </button>
           </div>
         </div>
