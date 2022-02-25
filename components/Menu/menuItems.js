@@ -2,7 +2,6 @@ import React from "react";
 import SignageHeading from "../DigitalSignages/signageHeading";
 import MenuCard from "./menuCard";
 
-
 const MenuItems = ({ menu, image }) => {
   // const maxItemsPerCategory = noImages ? 4 : 5;
   // const numberOfCategories = noImages ? 10 : 4;
@@ -28,9 +27,20 @@ const MenuItems = ({ menu, image }) => {
         <div className="signage-product-content-container">
           <SignageHeading className="signage-horizontal-heading" />
 
-          <div className="columns signage-content " style={{height: '100%', paddingLeft: '145px', paddingTop: '150px'}}>
+          <div
+            className="columns signage-content "
+            style={{
+              height: "100%",
+              paddingLeft: "145px",
+              paddingTop: "150px",
+            }}
+          >
             {categoiresToDisplay.map((category, k) => (
-              <div key={k} className="column is-half" style={{paddingRight: '195px'}}>
+              <div
+                key={k}
+                className="column is-half"
+                style={{ paddingRight: "195px" }}
+              >
                 <p className="category-title is-2">{category.name}</p>
                 <div className="menu-category-items">
                   {category.items.slice(0, 6).map((item, key) => (
@@ -42,6 +52,10 @@ const MenuItems = ({ menu, image }) => {
                 </div>
               </div>
             ))}
+
+            <button className="button guestie-menu">
+              <img src="/images/guestro-symbol.png" alt="guestro-logo" width={80} height={80} />
+            </button>
           </div>
         </div>
       </div>

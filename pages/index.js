@@ -16,8 +16,6 @@ export default function Home({menus, events, images}) {
 
 export async function getStaticProps(ctx) {
   const menuOne = await getMenuData_One(ctx);
-  const eventsOne = await getEvents_One(ctx);
-  const eventsTwo = await getEvents_Two(ctx);
   const imagesArray = await getImages(ctx);
 
   const menus = {
@@ -28,15 +26,9 @@ export async function getStaticProps(ctx) {
     imagesOne: [...imagesArray],
   }
 
-  const events = {
-    eventsOne: [...eventsOne],
-    eventsTwo: [...eventsTwo]
-  };
-
   return {
     props: {
       menus,
-      events,
       images
     }
   }

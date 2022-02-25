@@ -163,3 +163,22 @@
     }
   }
 }
+
+.button.guestie-menu {
+  padding: 60px 60px 60px 50px;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: $black;
+  border: 2.5px solid $primary;
+  font-size: 48px;
+  font-family: $family-primary;
+  font-weight: 700;
+  height: 110px;
+  margin-bottom: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 74%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
