@@ -8,7 +8,7 @@ export default function SEO() {
 
   React.useEffect(() => {
     (async function () {
-      axios.get("https://login.guestie.se/api/profiles/330/").then((res) => {
+      axios.get("https://app.guestro.se/api/profiles/330").then((res) => {
         const seoDescription = res.data.data.description;
         setSeoDescription(seoDescription);
       });
@@ -31,10 +31,7 @@ export default function SEO() {
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://schweizer.se" />
-      <meta
-        property="twitter:title"
-        content="Caffe Schweizer"
-      />
+      <meta property="twitter:title" content="Caffe Schweizer" />
       <meta property="twitter:description" content={seoDescription} />
       <meta property="twitter:image" content={seoImage}></meta>
       <link rel="shortcut icon" href="/favicon-32x32.png" />

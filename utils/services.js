@@ -2,22 +2,22 @@ import axios from "axios";
 
 export function getMenuData_One(ctx = null) {
   return axios
-    .get(`https://login.guestie.se/api/profiles/330/menus`, ctx)
+    .get(`https://app.guestro.se/api/profiles/330/menus`, ctx)
     .then(({ data }) => data.data)
     .catch((err) => console.error(err));
 }
 
 export function getImages(ctx = null) {
   return axios
-    .get(`https://login.guestie.se/api/profiles/330/galleries`, ctx)
+    .get(`https://app.guestro.se/api/profiles/330/galleries`, ctx)
     .then(({ data }) => data.data)
     .catch((err) => console.error(err));
 }
 
 export function getEvents(ctx = null) {
   return axios
-    .get(`https://login.findie.se/api/profiles/330/events`, ctx)
-    .then(({ data }) => data.data) 
+    .get(`https://app.guestro.se/api/profiles/330/events`, ctx)
+    .then(({ data }) => data.data)
     .catch((err) => console.error(err));
 }
 
@@ -34,4 +34,4 @@ export function getEvents_Two(ctx = null) {
     .get(`https://login.findie.se/api/profiles/220/events/`, ctx)
     .then(({ data }) => data.data)
     .catch((err) => console.error(err));
-} 
+}
